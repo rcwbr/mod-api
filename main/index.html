@@ -297,6 +297,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -442,6 +453,17 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -572,7 +594,7 @@
   
 
 
-<h1 id="mod-api">mod-api<a name="new_project"></a></h1>
+<h1 id="mod-api">mod-api<a name="mod-api"></a></h1>
 <p><a href="https://pypi.org/project/mod-api/"><img alt="PyPI - Version" src="https://img.shields.io/pypi/v/mod-api?style=flat-square&amp;color=yellow" /></a>
 <a href="https://codecov.io/github/rcwbr/mod-api"><img alt="codecov" src="https://codecov.io/github/rcwbr/mod-api/graph/badge.svg?token=3407T4QQ6C&amp;style=flat-square" /></a>
 <a href="https://github.com/psf/black?tab=readme-ov-file"><img alt="Python Black" src="https://img.shields.io/badge/code_style-black-black?style=flat-square&amp;logo=black&amp;logoColor=white" /></a>
@@ -582,11 +604,13 @@
 <a href="https://github.com/pre-commit/pre-commit"><img alt="pre-commit" src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&amp;logoColor=white&amp;style=flat-square" /></a>
 <a href="https://github.com/conventional-changelog/commitlint"><img alt="Commitlint" src="https://img.shields.io/badge/commitlint-enabled-navy?style=flat-square&amp;logo=commitlint" /></a>
 <a href="https://www.conventionalcommits.org"><img alt="Conventional Commits" src="https://img.shields.io/badge/conventional_commits-compliant-pink?style=flat-square&amp;logo=conventionalcommits&amp;logoColor=white" /></a></p>
-<p>PLACEHOLDER: Project description.</p>
+<p>REST API for the <a href="https://github.com/mod-audio/mod-host?tab=readme-ov-file">MOD audio mod-host</a>
+service.</p>
 <!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=1 -->
 
 <ul>
-<li><a href="#new_project">mod-api</a></li>
+<li><a href="#mod-api">mod-api</a></li>
+<li><a href="#documentation">Documentation</a></li>
 <li><a href="#overview">Overview</a></li>
 <li><a href="#usage">Usage</a></li>
 <li><a href="#contributing">Contributing</a><ul>
@@ -601,8 +625,18 @@
 </ul>
 <!-- mdformat-toc end -->
 
+<h2 id="documentation">Documentation<a name="documentation"></a></h2>
+<p>See the full documentation at https://rcwbr.github.io/mod-api/latest</p>
 <h2 id="overview">Overview<a name="overview"></a></h2>
-<p>PLACEHOLDER: Brief overview of what the project does.</p>
+<p>This package provides a REST API around the key resources managed by the
+<a href="https://github.com/mod-audio/mod-host">mod-host service</a> via
+<a href="https://github.com/mod-audio/mod-host?tab=readme-ov-file#commands-or-protocol">its socket message interface</a>.
+A
+<a href="https://github.com/mod-audio/mod-ui/blob/0467c103d6dab0da18fe4d1762de164ced57f0b6/mod/webserver.py#L2266">similar API is provided</a>
+by the <a href="https://github.com/mod-audio/mod-ui/tree/0467c103d6dab0da18fe4d1762de164ced57f0b6">mod-ui</a>
+service, which is probably more complete, up-to-date, and generally better for most use-cases.
+However, it is not managed independently of the actual UI, is not entirely RESTful, and is not
+documented, all of which this project aims to solve, at least for key resources.</p>
 <h2 id="usage">Usage<a name="usage"></a></h2>
 <p>PLACEHOLDER: Add usage instructions using type-specific methods.</p>
 <h2 id="contributing">Contributing<a name="contributing"></a></h2>
