@@ -7,4 +7,4 @@ def placeholder_function() -> str:
     Returns:
         A placeholder string.
     """
-    return 'placeholder'
+    return "placeholder"

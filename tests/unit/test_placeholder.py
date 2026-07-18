@@ -7,7 +7,7 @@ from mod_api.main import placeholder_function
 
 def test_placeholder_function_returns_string():
     """Test that placeholder_function returns the expected string."""
-    assert placeholder_function() == 'placeholder'
+    assert placeholder_function() == "placeholder"
 
 
 def test_placeholder_function_returns_correct_type():
@@ -31,9 +31,9 @@ class TestPlaceholderFunction:
 
     def test_returns_expected_value(self):
         """Assert the expected return value."""
-        assert placeholder_function() == 'placeholder'
+        assert placeholder_function() == "placeholder"
 
-    @pytest.mark.parametrize('expected', ['placeholder'])
+    @pytest.mark.parametrize("expected", ["placeholder"])
     def test_parametrized(self, expected):
         """Parametrized test for placeholder_function."""
         assert placeholder_function() == expected

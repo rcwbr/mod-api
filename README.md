@@ -1,4 +1,4 @@
-# mod-api<a name="new_project"></a>
+# mod-api<a name="mod-api"></a>
 
 [![PyPI - Version](https://img.shields.io/pypi/v/mod-api?style=flat-square&color=yellow)](https://pypi.org/project/mod-api/)
 [![codecov](https://codecov.io/github/rcwbr/mod-api/graph/badge.svg?token=3407T4QQ6C&style=flat-square)](https://codecov.io/github/rcwbr/mod-api)
@@ -10,11 +10,13 @@
 [![Commitlint](https://img.shields.io/badge/commitlint-enabled-navy?style=flat-square&logo=commitlint)](https://github.com/conventional-changelog/commitlint)
 [![Conventional Commits](https://img.shields.io/badge/conventional_commits-compliant-pink?style=flat-square&logo=conventionalcommits&logoColor=white)](https://www.conventionalcommits.org)
 
-PLACEHOLDER: Project description.
+REST API for the [MOD audio mod-host](https://github.com/mod-audio/mod-host?tab=readme-ov-file)
+service.
 
 <!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=1 -->
 
-- [mod-api](#new_project)
+- [mod-api](#mod-api)
+  - [Documentation](#documentation)
   - [Overview](#overview)
   - [Usage](#usage)
   - [Contributing](#contributing)
@@ -27,9 +29,21 @@ PLACEHOLDER: Project description.
 
 <!-- mdformat-toc end -->
 
+## Documentation<a name="documentation"></a>
+
+See the full documentation at https://rcwbr.github.io/mod-api/latest
+
 ## Overview<a name="overview"></a>
 
-PLACEHOLDER: Brief overview of what the project does.
+This package provides a REST API around the key resources managed by the
+[mod-host service](https://github.com/mod-audio/mod-host) via
+[its socket message interface](https://github.com/mod-audio/mod-host?tab=readme-ov-file#commands-or-protocol).
+A
+[similar API is provided](https://github.com/mod-audio/mod-ui/blob/0467c103d6dab0da18fe4d1762de164ced57f0b6/mod/webserver.py#L2266)
+by the [mod-ui](https://github.com/mod-audio/mod-ui/tree/0467c103d6dab0da18fe4d1762de164ced57f0b6)
+service, which is probably more complete, up-to-date, and generally better for most use-cases.
+However, it is not managed independently of the actual UI, is not entirely RESTful, and is not
+documented, all of which this project aims to solve, at least for key resources.
 
 ## Usage<a name="usage"></a>
 
