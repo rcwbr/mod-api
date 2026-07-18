@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "mod-api"
 version = "0.1.0"
-description = "PLACEHOLDER: Project description."
+description = "REST API for the MOD audio mod-host service."
 authors = [
     { name = "rcwbr" }
 ]

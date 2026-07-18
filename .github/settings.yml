@@ -1,6 +1,6 @@
 repository:
   name: mod-api
-  description: 'PLACEHOLDER: Project description'
+  description: REST API for the MOD audio mod-host service
   default_branch: main
   # Prevent strategies other than basic merge, as they interfere with conventional changelog version inference
   allow_squash_merge: false
