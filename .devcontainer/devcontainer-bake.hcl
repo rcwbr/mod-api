@@ -20,6 +20,6 @@ target "docker-client" {
 }
 target "uv-project" {
   args = {
-    UV_PACKAGE_NAME = "mod-api_UNDERSCORE"
+    UV_PACKAGE_NAME = "mod_api"
   }
 }
