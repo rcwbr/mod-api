@@ -1,26 +1,28 @@
-[build-system]
-requires = ["setuptools>=61.0", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "mod-api"
 version = "0.1.0"
-description = "PLACEHOLDER: Project description."
-authors = [
-    { name = "rcwbr" }
+description = "API service for mod-host control"
+requires-python = ">=3.10"
+dependencies = [
+    "rdflib>=6.0.0",
 ]
-readme = "README.md"
-requires-python = ">=3.12"
-dependencies = []
 
 [project.optional-dependencies]
-dev = [
-    "mike>=2.2.0",
-    "mkdocs-material>=9.7.6",
-    "mkdocstrings-python>=2.0.3",
-    "pytest-cov>=7.0.0",
-    "uv>=0.11.7"
+test = [
+    "pytest>=7.0",
+    "testcontainers>=4.0",
+    "httpx>=0.24.0",
+    "pydantic>=2.0.0",
+]
+api = [
+    "fastapi>=0.100.0",
+    "uvicorn[standard]>=0.22.0",
 ]
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
